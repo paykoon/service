@@ -1,21 +1,22 @@
 package main
 
 import(
-   "context"
    "cloud.google.com/go/storage"
-   elastic "gopkg.in/olivere/elastic.v3"
-   "fmt"
-   "net/http"
-   "encoding/json"
-   "io"
-   "log"
-   "strconv"
-   "reflect"
+   "context"
    "cloud.google.com/go/bigtable"
-   "github.com/pborman/uuid"
+   "encoding/json"
+   "fmt"
    "github.com/auth0/go-jwt-middleware"
    "github.com/dgrijalva/jwt-go"
    "github.com/gorilla/mux"
+   "github.com/pborman/uuid"
+   elastic "gopkg.in/olivere/elastic.v3"
+   "io"
+   "log"
+   "net/http"
+   "reflect"
+   "strconv"
+
 )
 
 type Location struct {
@@ -239,7 +240,7 @@ const (
    PROJECT_ID = "around-205008"
    BT_INSTANCE = "around-post"
    // Needs to update this URL if you deploy it to cloud.
-   ES_URL = "http://35.200.110.98:9200"
+   ES_URL = "http://35.200.58.153:9200"
    BUCKET_NAME = "post-images-205008"
 )
 
